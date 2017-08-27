@@ -1,9 +1,11 @@
 import com.oracle.tools.packager.Log;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -74,25 +76,42 @@ public class TrueCarHomePageTest {
         WebElement searchTextBox = driver.findElement(By.id("com.truecar.mobile.android.consumer:id/used_find_search"));
         Assert.assertTrue(searchTextBox.isDisplayed());
 
-        //Selecting BMW and 2 series model
-        searchTextBox.sendKeys("2 series");
-        WebElement bmwElement = driver.findElement(By.id("com.truecar.mobile.android.consumer:id/tc_used_make_view"));
-        bmwElement.click();
-        Log.info("click on BMW 2 series brand");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.truecar.mobile.android.consumer:id/tc_toolbar")));
-        WebElement resultsPage = driver.findElement(By.id("com.truecar.mobile.android.consumer:id/tc_toolbar"));
-        Assert.assertTrue(resultsPage.isDisplayed());
+        //Scrolling for BMW and selecting '2 series' model
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.truecar.mobile.android.consumer:id/used_find_search")));
+        TouchAction action = new TouchAction(driver);
+        action.press(0, 350);
+        action.waitAction(200);
+        action.moveTo(0, 200);
+        action.release();
+        action.perform();
+        Log.info("Scrolling down the list");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text='BMW']")));
+        WebElement bmw = driver.findElement(By.xpath("//android.widget.TextView[@text='BMW']"));
+        bmw.click();
+        WebElement selectModel = driver.findElement(By.xpath("//android.widget.TextView[@text='2 Series']"));
+        selectModel.click();
+        Log.info("selected 2 series model");
 
-        //Filter to find a 2015 2 series in Black
+        //Filter to find a 2 series model in Black
         WebElement clickOnFilter = driver.findElement(By.id("com.truecar.mobile.android.consumer:id/used_search_results_filter_textview"));
         clickOnFilter.click();
-        WebElement selectColor = driver.findElement(By.xpath(" //android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[5]/android.widget.RelativeLayout[1]\n"));
+        WebElement selectColor = driver.findElement(By.xpath("//android.widget.TextView[@text='Color']"));
         selectColor.click();
         Log.info("Clicking on 'color' field");
-        WebElement clickBlack = driver.findElement(By.xpath("//android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]"));
+        WebElement clickBlack = driver.findElement(By.xpath("//android.widget.TextView[@text='Black']"));
         clickBlack.click();
         Log.info("Selecting black color");
         WebElement setColorsButton = driver.findElement(By.id("com.truecar.mobile.android.consumer:id/used_refine_search_color_submit"));
         setColorsButton.click();
+
+        //Opening the first car from the list
+        WebElement doneButton = driver.findElement(By.id("com.truecar.mobile.android.consumer:id/used_refine_search_max_mileage"));
+        doneButton.click();
+        WebElement selectFirstCar = driver.findElement(By.xpath("//android.widget.RelativeLayout[@index='0']"));
+        selectFirstCar.click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("com.truecar.mobile.android.consumer:id/used_header_image_row___image")));
+        Log.info("wait for the page to load");
+        WebElement carImage = driver.findElement(By.id("com.truecar.mobile.android.consumer:id/used_header_image_row___image"));
+        Assert.assertTrue(carImage.isDisplayed());
     }
 }
