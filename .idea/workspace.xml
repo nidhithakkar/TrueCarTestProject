@@ -17,8 +17,8 @@
       <file leaf-file-name="TrueCarHomePageTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tst/TrueCarHomePageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+            <state relative-caret-position="1305">
+              <caret line="87" column="58" lean-forward="false" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -148,7 +148,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TrueCarHomePageTest.clickOnCloseButton">
+  <component name="RunManager" selected="JUnit.TrueCarHomePageTest.selectCarModelTest">
     <configuration name="TrueCarHomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TrueCarTestProject" />
@@ -177,6 +177,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TrueCarHomePageTest" />
       <option name="METHOD_NAME" value="clickOnCloseButton" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TrueCarHomePageTest.selectCarModelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TrueCarTestProject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TrueCarHomePageTest" />
+      <option name="METHOD_NAME" value="selectCarModelTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -270,14 +290,16 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TrueCarHomePageTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.TrueCarHomePageTest.clickOnCloseButton" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TrueCarHomePageTest.selectCarModelTest" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TrueCarHomePageTest.clickOnCloseButton" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TrueCarHomePageTest" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TrueCarHomePageTest.selectCarModelTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TrueCarHomePageTest.clickOnCloseButton" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TrueCarHomePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -292,23 +314,11 @@
       <option name="presentableId" value="Default" />
       <updated>1503791095840</updated>
       <workItem from="1503791097135" duration="19393000" />
-      <workItem from="1503818356501" duration="7847000" />
+      <workItem from="1503818356501" duration="9681000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TrueCarHomePageTest_clickOnCloseButton - 2017.08.27 at 02h 59m 51s.xml">
-      <configuration name="TrueCarHomePageTest.clickOnCloseButton" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TrueCarHomePageTest_clickOnCloseButton - 2017.08.27 at 03h 05m 19s.xml">
-      <configuration name="TrueCarHomePageTest.clickOnCloseButton" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TrueCarHomePageTest_clickOnCloseButton - 2017.08.27 at 03h 07m 47s.xml">
-      <configuration name="TrueCarHomePageTest.clickOnCloseButton" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TrueCarHomePageTest_clickOnCloseButton - 2017.08.27 at 03h 08m 59s.xml">
-      <configuration name="TrueCarHomePageTest.clickOnCloseButton" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TrueCarHomePageTest_clickOnCloseButton - 2017.08.27 at 03h 22m 00s.xml">
       <configuration name="TrueCarHomePageTest.clickOnCloseButton" configurationId="JUnit" />
     </history-entry>
@@ -327,9 +337,21 @@
     <history-entry file="TrueCarHomePageTest_clickOnCloseButton - 2017.08.27 at 03h 39m 40s.xml">
       <configuration name="TrueCarHomePageTest.clickOnCloseButton" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TrueCarHomePageTest_clickOnCloseButton - 2017.08.27 at 16h 07m 28s.xml">
+      <configuration name="TrueCarHomePageTest.clickOnCloseButton" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrueCarHomePageTest_selectCarModelTest - 2017.08.27 at 16h 10m 08s.xml">
+      <configuration name="TrueCarHomePageTest.selectCarModelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrueCarHomePageTest_selectCarModelTest - 2017.08.27 at 16h 12m 20s.xml">
+      <configuration name="TrueCarHomePageTest.selectCarModelTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TrueCarHomePageTest_selectCarModelTest - 2017.08.27 at 16h 13m 47s.xml">
+      <configuration name="TrueCarHomePageTest.selectCarModelTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27240000" />
+    <option name="totallyTimeSpent" value="29074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1260" height="733" extended-state="0" />
@@ -344,7 +366,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -484,8 +506,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tst/TrueCarHomePageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+        <state relative-caret-position="1305">
+          <caret line="87" column="58" lean-forward="false" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
